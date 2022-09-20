@@ -1,3 +1,4 @@
+
 # Funciones [Python]
 # Ejercicios de práctica
 
@@ -10,6 +11,11 @@
 # Ejercicios con funciones
 
 def imprimir_mayor(numero_1, numero_2):
+    if numero_1 > numero_2:
+        print (numero_1, "es mayor")
+    else:
+        print (numero_2, "es mayor")
+
     print("Funcion imprimir mayor")
     # En esta función debe determinar cual de los dos
     # números ingresados por parámetro es mayor
@@ -21,5 +27,4 @@ if __name__ == '__main__':
     
     # Alumno: Complete la función "imprimir_mayor"
     imprimir_mayor(2, 10)
-
     print("terminamos")
