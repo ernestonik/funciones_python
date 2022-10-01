@@ -50,15 +50,30 @@ Finalmente dicha función debe retornar la lista de elementos random generados.
 # --------------------------------
 # Aquí dentro definir la función lista_aleatoria
 
+def lista_aleatoria(vmin, vmax, cant):
+    numeros = []
+    for i in range(cant):
+        numero = random.randint(vmin, vmax)
+        numeros.append(numero)
+    return numeros
 
 # --------------------------------
 
 if __name__ == '__main__':
     print("Bienvenidos a otra clase de Inove con Python")
     
-    inicio = 0
-    fin = 10
-    cantidad = 5
+# inicio = 0
+#fin = 10
+#cantidad = 5
+    cant = int(input("¿Cuantos?: "))
+    vmin = int(input("Como minimo: "))
+    vmax = int(input("Como maximo:"))
+
+mi_lista = lista_aleatoria(vmin, vmax, cant)
+
+print (mi_lista)
+
+
 
     # Alumno: Luego de crear la función invocarla en este lugar:
 
@@ -69,4 +84,4 @@ if __name__ == '__main__':
 
     # print(mi_lista_aleatoria)
 
-    print("terminamos")
+print("terminamos")
