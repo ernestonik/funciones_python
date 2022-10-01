@@ -37,11 +37,21 @@ en la lista pueden usar el método nativo de list "count"
 # Aquí copiar la función "lista_aleatoria"
 # ya elaborada en el ejercicio anterior
 
+def lista_aleatoria(vmin, vmax, cant):
+    numeros = []
+    for i in range(cant):
+        numero = random.randint(vmin, vmax)
+        numeros.append(numero)
+    return numeros
 
 # --------------------------------
 
 # --------------------------------
 # Aquí dentro definir la función contar
+
+def count():
+    mi_lista.count()
+    return count
 
 
 # --------------------------------
@@ -52,6 +62,18 @@ if __name__ == '__main__':
     # Alumno: Utilizar la función "lista_aleatoria"
     # para que genere una lista de 5 números que esten comprendidos
     # entre los números 1 al 6 inclusive
+
+    cant = int(input("¿Cuantos?: "))
+    vmin = int(input("Como minimo: "))
+    vmax = int(input("Como maximo:"))
+
+mi_lista = lista_aleatoria(vmin, vmax, cant)
+
+print (mi_lista)
+
+contador = mi_lista.count(3)
+print ("Se repite", contador, "veces")
+
 
     # lista_numeros = lista_aleatoria(...)
 
@@ -66,4 +88,4 @@ if __name__ == '__main__':
 
     # print(cantidad_tres)
 
-    print("terminamos")
+print("terminamos")
